@@ -1,0 +1,29 @@
+﻿@model SmallPlanets.Models.SolarSystem
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/solar-system.css" rel="stylesheet" />
+    <link href="~/Content/planets.css" rel="stylesheet" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="background">
+        <div class="solar-system">
+            @*<img src="~/Images/solar-system.jpg" class="solar-system"/>*@
+            <div id="saturn" class="planet saturn" data-name="Saturn"></div>
+            @*<img src="~/Images/solar-system.jpg" style="height: 100%; width: 100%; overflow-y:auto;"/>*@
+        </div>
+    </div>
+</body>
+
+</html>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/custom")
