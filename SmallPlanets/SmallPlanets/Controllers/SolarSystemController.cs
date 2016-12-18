@@ -9,10 +9,12 @@ namespace SmallPlanets.Controllers
     public class SolarSystemController : Controller
     {
         private readonly ISolarSystem _solarSystem;
+        
 
         public SolarSystemController()
         {
-            _solarSystem = new SolarSystemService();
+            IAPIConsumer apiConsumer = new APIConsumerService();
+            _solarSystem = new SolarSystemService(apiConsumer);
         }
 
         // GET: SolarSystem

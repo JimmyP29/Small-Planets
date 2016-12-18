@@ -19,6 +19,9 @@
 function displayInformation(planet) {
     document.getElementById('planet-image').src = 'data:image/jpeg;base64,' + planet.Image;
     $('.modal-header').text(planet.Name);
+    $('#label-distance').text(planet.DistanceFromSun);
+    $('#label-mass').text(planet.Mass);
+    $('#label-diameter').text(planet.Diameter);
 
     $('#planet-modal').modal();
 }

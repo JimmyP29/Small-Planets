@@ -1,4 +1,4 @@
-﻿namespace SmallPlanets.Models.ViewModels
+﻿namespace PlanetAPI.Models
 {
     public class Planet
     {
