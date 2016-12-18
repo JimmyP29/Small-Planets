@@ -1,6 +1,7 @@
 ﻿$(function () {
     //alert('HEll YEah');
    // loadSolarSystem();
+    $('[data-toggle="tooltip"]').tooltip();
 
     $('.planet').click(function (e) {
         //var planetName = $(e.toElement).attr('data-planet-name');

@@ -1,13 +1,118 @@
-﻿.saturn {
+﻿.mercury {
+    height: 60px;
+    width: 60px;
+    /*background-color: green;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 70px;
+    top: 470px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.venus {
+    height: 100px;
+    width: 100px;
+    /*background-color: violet;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 140px;
+    top: 310px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.earth {
+    height: 100px;
+    width: 100px;
+    /*background-color: blue;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 250px;
+    top: 105px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mars {
+    height: 140px;
+    width: 140px;
+    /*background-color: red;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 360px;
+    top: -112px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.jupiter {
+    height: 200px;
+    width: 200px;
+    /*background-color: antiquewhite;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 530px;
+    top: -350px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.saturn {
     height: 150px;
     width: 150px;
-    background-color: red;
-    opacity: 0.5;
+    /*background-color: yellow;
+    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 760px;
-    top: 150px;
+    top: -450px;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.uranus {
+    height: 100px;
+    width: 100px;
+    /*background-color: brown;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 920px;
+    top: -484px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.neptune {
+    height: 100px;
+    width: 100px;
+    /*background-color: aqua;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 1010px;
+    top: -476px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pluto {
+    height: 60px;
+    width: 60px;
+    /*background-color: purple;
+    opacity: 0.5;*/
+    z-index: 1;
+    position: relative;
+    left: 1110px;
+    top: -450px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 /*@media screen and (max-width: 980px) and (max-width: 1024px) and (max-height: 800px) {

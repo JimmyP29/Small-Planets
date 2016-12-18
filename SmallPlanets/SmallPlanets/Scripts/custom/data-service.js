@@ -2,9 +2,9 @@
     loadPlanet: function (planetName) {
         $.ajax({
             async: false,
-            url: domain.path + '/SolarSystem/LoadPlanet',
+            url: domain.path + '/SolarSystem/LoadPlanet?planetName=' + planetName,
             dataType: 'json',
-            data: JSON.stringify(planetName),
+           // data: planetName,
             type: 'POST',
             contentType: "application/json; charset=utf-8",
             success: function (planet) {
