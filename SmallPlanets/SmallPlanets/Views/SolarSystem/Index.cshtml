@@ -9,6 +9,8 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/solar-system.css" rel="stylesheet" />
     <link href="~/Content/planets.css" rel="stylesheet" />
     <title>Index</title>
@@ -17,10 +19,41 @@
     <div class="background">
         <div class="solar-system">
             @*<img src="~/Images/solar-system.jpg" class="solar-system"/>*@
-            <div id="saturn" class="planet saturn" data-name="Saturn"></div>
+            <div id="saturn" class="planet saturn" data-planet-name="Saturn"></div>
             @*<img src="~/Images/solar-system.jpg" style="height: 100%; width: 100%; overflow-y:auto;"/>*@
         </div>
     </div>
+
+    <div id="planet-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="planet-image" style="height: 100px; width: 100px;" />
+                    <label>Distance from Sun: </label>
+                    <label id="label-distance"></label>
+
+                    <label>Mass: </label>
+                    <label id="label-mass"></label>
+
+                    <label>Diameter: </label>
+                    <label id="label-diameter"></label>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <input type="hidden" id="hidden-planet" />
 </body>
 
 </html>

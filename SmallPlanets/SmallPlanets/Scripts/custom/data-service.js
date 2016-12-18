@@ -1,14 +1,18 @@
 ﻿var dataService = {
-    getAllPlanetsData: function () {
+    loadPlanet: function (planetName) {
         $.ajax({
-            url: domain.path + '/SolarSystem/LoadSolarSystemData',
+            async: false,
+            url: domain.path + '/SolarSystem/LoadPlanet',
             dataType: 'json',
+            data: JSON.stringify(planetName),
             type: 'POST',
-            success: function(data){
-                alert(data + '1');
+            contentType: "application/json; charset=utf-8",
+            success: function (planet) {
+                $('#hidden-planet').val(encodeURIComponent(JSON.stringify(planet)));
             },
             fail: function () {
-                alert('FAIL');
+                console.log("FAIL - Couldn't retrieve planet data");
+                return null;
             }
         });
     }

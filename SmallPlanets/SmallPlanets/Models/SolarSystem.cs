@@ -1,4 +1,5 @@
 ﻿using SmallPlanets.Interfaces;
+using SmallPlanets.Models.ViewModels;
 using System.Collections.Generic;
 
 namespace SmallPlanets.Models
@@ -19,6 +20,11 @@ namespace SmallPlanets.Models
         public void CreateSolarSystem()
         {
             Planets = _solarSystemService.LoadSolarSystem();
+        }
+
+        public Planet GetPlanetFromSolarSystem(string planetName)
+        {
+            return _solarSystemService.GetPlanetByName(this, planetName);
         }
     }
 }

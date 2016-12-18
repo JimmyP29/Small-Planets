@@ -1,5 +1,6 @@
 ﻿using SmallPlanets.Interfaces;
 using SmallPlanets.Models;
+using SmallPlanets.Models.ViewModels;
 using SmallPlanets.Services;
 using System.Web.Mvc;
 
@@ -17,16 +18,32 @@ namespace SmallPlanets.Controllers
         // GET: SolarSystem
         public ActionResult Index()
         {
+            Session["SolarSystem"] = LoadSolarSystemData();
             return View();
         }
 
         [HttpPost]
-        public bool LoadSolarSystemData()
-
+        public JsonResult LoadPlanet(string planetName)
         {
-            SolarSystem solarSystem = new SolarSystem(_solarSystem);
-            solarSystem.CreateSolarSystem();
-            return true;
+            planetName = "Saturn";
+            SolarSystem solarSystem = LoadSolarSystemData();
+            Planet planet = solarSystem.GetPlanetFromSolarSystem(planetName);
+            return Json(planet);
+        }
+
+        private SolarSystem LoadSolarSystemData()
+        {
+            SolarSystem solarSystem;
+            if (Session["SolarSystem"] == null)
+            {
+                solarSystem = new SolarSystem(_solarSystem);
+                solarSystem.CreateSolarSystem();
+            }
+            else
+            {
+                solarSystem = (SolarSystem)Session["SolarSystem"];
+            }
+            return solarSystem;
         }
     }
 }

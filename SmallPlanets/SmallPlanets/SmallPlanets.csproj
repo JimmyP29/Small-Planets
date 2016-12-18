@@ -178,7 +178,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Planet.cs" />
+    <Compile Include="Models\ViewModels\Planet.cs" />
     <Compile Include="Models\SolarSystem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SolarSystemService.cs" />
@@ -193,12 +193,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\saturn.jpeg" />
     <Content Include="Images\solar-system.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom\data-service.js" />
-    <Content Include="Scripts\custom\planet.js" />
     <Content Include="Scripts\custom\small-planets-main.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
