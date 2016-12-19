@@ -7,6 +7,7 @@
         public string DistanceFromSun { get; set; }
         public string Mass { get; set; }
         public string Diameter { get; set; }
+        public string AdditionalInformation { get; set; }
 
         public Planet()
         {
@@ -15,6 +16,7 @@
             DistanceFromSun = string.Empty;
             Mass = string.Empty;
             Diameter = string.Empty;
+            AdditionalInformation = string.Empty;
         }
     }
 }

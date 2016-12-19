@@ -115,6 +115,11 @@
     cursor: pointer;
 }
 
+#planet-image {
+    height: 150px;
+    width: 150px;
+}
+
 /*@media screen and (max-width: 980px) and (max-width: 1024px) and (max-height: 800px) {
     .saturn{
         height: 105px;

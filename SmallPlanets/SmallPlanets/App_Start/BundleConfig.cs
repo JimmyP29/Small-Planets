@@ -27,9 +27,17 @@ namespace SmallPlanets
                       "~/Scripts/custom/planet.js",
                       "~/Scripts/custom/data-service.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/typed").Include(
+                      "~/Scripts/typed.min.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/Custom").Include(
+                      "~/Content/modal.css",
+                      "~/Content/planets.css",
+                      "~/Content/solar-system.css"));
         }
     }
 }

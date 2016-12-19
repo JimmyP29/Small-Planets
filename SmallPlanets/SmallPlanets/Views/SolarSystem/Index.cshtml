@@ -10,15 +10,17 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Custom")
     @Scripts.Render("~/bundles/modernizr")
-    <link href="~/Content/solar-system.css" rel="stylesheet" />
-    <link href="~/Content/planets.css" rel="stylesheet" />
-    <title>Index</title>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <title>Small Planets</title>
 </head>
 <body>
+    @*<div id="mission-panel">
+        <h2>Test</h2>
+    </div>*@
     <div class="background">
         <div class="solar-system">
-            @*<img src="~/Images/solar-system.jpg" class="solar-system"/>*@
             <div id="mercury" class="planet mercury" data-planet-name="Mercury" data-toggle="tooltip" data-placement="top" title="Mercury"></div>
             <div id="venus" class="planet venus" data-planet-name="Venus" data-toggle="tooltip" data-placement="top" title="Venus"></div>
             <div id="earth" class="planet earth" data-planet-name="Earth" data-toggle="tooltip" data-placement="top" title="Earth"></div>
@@ -28,7 +30,6 @@
             <div id="uranus" class="planet uranus" data-planet-name="Uranus" data-toggle="tooltip" data-placement="top" title="Uranus"></div>
             <div id="neptune" class="planet neptune" data-planet-name="Neptune" data-toggle="tooltip" data-placement="top" title="Neptune"></div>
             <div id="pluto" class="planet pluto" data-planet-name="Pluto" data-toggle="tooltip" data-placement="top" title="Pluto"></div>
-            @*<img src="~/Images/solar-system.jpg" style="height: 100%; width: 100%; overflow-y:auto;"/>*@
         </div>
     </div>
 
@@ -39,20 +40,40 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                        <h1 class="modal-title"></h1>
                 </div>
                 <div class="modal-body">
-                    <img id="planet-image" style="height: 100px; width: 100px;" />
-                    <label>Distance from Sun: </label>
-                    <label id="label-distance"></label>
-
-                    <label>Mass: </label>
-                    <label id="label-mass"></label>
-
-                    <label>Diameter: </label>
-                    <label id="label-diameter"></label>
-
-
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img id="planet-image" />
+                        </div>
+                        <div class="col-lg-8">
+                            <br />
+                            <div class="row">
+                                <label>Distance from Sun: </label>
+                                <span id="span-distance"></span>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <label>Mass: </label>
+                                <span id="span-mass"></span>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <label>Diameter: </label>
+                                <span id="span-diameter"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 ">
+                            <label>Additional Information: </label>
+                            <p id="p-additional"></p>
+                        </div>
+                       
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -67,4 +88,5 @@
 </html>
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
+@Scripts.Render("~/bundles/typed")
 @Scripts.Render("~/bundles/custom")
