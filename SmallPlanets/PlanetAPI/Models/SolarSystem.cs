@@ -359,7 +359,7 @@ namespace PlanetAPI.Models
         #endregion
 
 
-        private byte[] ImageToByteArray(System.Drawing.Image imageIn)
+        private byte[] ImageToByteArray(Image imageIn)
         {
             using (MemoryStream ms = new MemoryStream())
             {

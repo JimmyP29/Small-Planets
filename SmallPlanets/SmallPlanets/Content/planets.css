@@ -1,8 +1,6 @@
 ﻿.mercury {
     height: 60px;
     width: 60px;
-    /*background-color: green;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 70px;
@@ -14,8 +12,6 @@
 .venus {
     height: 100px;
     width: 100px;
-    /*background-color: violet;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 140px;
@@ -27,8 +23,6 @@
 .earth {
     height: 100px;
     width: 100px;
-    /*background-color: blue;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 250px;
@@ -40,8 +34,6 @@
 .mars {
     height: 140px;
     width: 140px;
-    /*background-color: red;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 360px;
@@ -53,8 +45,6 @@
 .jupiter {
     height: 200px;
     width: 200px;
-    /*background-color: antiquewhite;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 530px;
@@ -66,8 +56,6 @@
 .saturn {
     height: 150px;
     width: 150px;
-    /*background-color: yellow;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 760px;
@@ -79,8 +67,6 @@
 .uranus {
     height: 100px;
     width: 100px;
-    /*background-color: brown;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 920px;
@@ -92,8 +78,6 @@
 .neptune {
     height: 100px;
     width: 100px;
-    /*background-color: aqua;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 1010px;
@@ -105,8 +89,6 @@
 .pluto {
     height: 60px;
     width: 60px;
-    /*background-color: purple;
-    opacity: 0.5;*/
     z-index: 1;
     position: relative;
     left: 1110px;
@@ -120,23 +102,4 @@
     width: 150px;
 }
 
-/*@media screen and (max-width: 980px) and (max-width: 1024px) and (max-height: 800px) {
-    .saturn{
-        height: 105px;
-        width: 105px;
 
-    }
-}*/
-
-/*@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
-     .saturn{
-        height: 105px;
-        width: 105px;
-         position: relative;
-        
-         background-position-x: 10%;
-    }
-}*/

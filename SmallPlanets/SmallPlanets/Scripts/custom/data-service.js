@@ -4,7 +4,6 @@
             async: false,
             url: domain.path + '/SolarSystem/LoadPlanet?planetName=' + planetName,
             dataType: 'json',
-           // data: planetName,
             type: 'POST',
             contentType: "application/json; charset=utf-8",
             success: function (planet) {

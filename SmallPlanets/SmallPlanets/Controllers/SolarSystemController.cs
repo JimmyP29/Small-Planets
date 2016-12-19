@@ -27,7 +27,6 @@ namespace SmallPlanets.Controllers
         [HttpPost]
         public JsonResult LoadPlanet(string planetName)
         {
-           // planetName = "Saturn";
             SolarSystem solarSystem = LoadSolarSystemData();
             Planet planet = solarSystem.GetPlanetFromSolarSystem(planetName);
             return Json(planet);
