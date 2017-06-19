@@ -1,20 +1,23 @@
 ﻿using SmallPlanets.Interfaces;
 using SmallPlanets.Models;
 using SmallPlanets.Models.ViewModels;
-using SmallPlanets.Services;
 using System.Web.Mvc;
 
 namespace SmallPlanets.Controllers
 {
     public class SolarSystemController : Controller
     {
+        private readonly IAPIConsumer _apiConsumer;
         private readonly ISolarSystem _solarSystem;
         
 
-        public SolarSystemController()
+        public SolarSystemController(IAPIConsumer apiConsumer, ISolarSystem solarSystem)
         {
-            IAPIConsumer apiConsumer = new APIConsumerService();
-            _solarSystem = new SolarSystemService(apiConsumer);
+            //IAPIConsumer apiConsumer = new APIConsumerService();
+            //_solarSystem = new SolarSystemService(apiConsumer);
+            _apiConsumer = apiConsumer;
+            _solarSystem = solarSystem;
+
         }
 
         // GET: SolarSystem
