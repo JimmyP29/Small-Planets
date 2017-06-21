@@ -8,7 +8,7 @@ namespace PlanetAPI.Helpers
     {
         public static Bitmap GetPlanetImage(Assembly assembly, Stream stream, string planetName)
         {
-            string path = $"PlanetAPI.Images.{planetName}.jpeg";
+            string path = $"PlanetAPI.Images.{planetName.ToLower()}.jpeg";
             stream = assembly.GetManifestResourceStream(path);
             return new Bitmap(stream);
         }
