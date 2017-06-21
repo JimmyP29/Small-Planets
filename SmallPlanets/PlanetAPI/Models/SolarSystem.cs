@@ -1,5 +1,4 @@
-﻿using PlanetAPI.Helpers;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -24,7 +23,7 @@ namespace PlanetAPI.Models
             string pluto = "Pluto";
             Assembly assembly = Assembly.GetExecutingAssembly();
             Stream stream = null; 
-            Bitmap mercuryImage = PlanetImage.GetPlanetImage(assembly, stream, mercury);
+            Bitmap mercuryImage = GetMercuryImage(assembly, stream);
             Bitmap venusImage = GetVenusImage(assembly, stream);
             Bitmap earthImage = GetEarthImage(assembly, stream);
             Bitmap marsImage = GetMarsImage(assembly, stream);
@@ -43,7 +42,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(mercury),
                     Mass = GetMass(mercury),
                     AdditionalInformation = GetAdditionalInformation(mercury),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(mercuryImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(mercuryImage))
                 },
                 new Planet()
                 {
@@ -52,7 +51,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(venus),
                     Mass = GetMass(venus),
                     AdditionalInformation = GetAdditionalInformation(venus),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(venusImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(venusImage))
                 },
                 new Planet()
                 {
@@ -61,7 +60,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(earth),
                     Mass = GetMass(earth),
                     AdditionalInformation = GetAdditionalInformation(earth),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(earthImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(earthImage))
                 },
                 new Planet()
                 {
@@ -70,7 +69,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(mars),
                     Mass = GetMass(mars),
                     AdditionalInformation = GetAdditionalInformation(mars),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(marsImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(marsImage))
                 },
                 new Planet()
                 {
@@ -79,7 +78,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(jupiter),
                     Mass = GetMass(jupiter),
                     AdditionalInformation = GetAdditionalInformation(jupiter),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(jupiterImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(jupiterImage))
                 },
                 new Planet()
                 {
@@ -88,7 +87,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(saturn),
                     Mass = GetMass(saturn),
                     AdditionalInformation = GetAdditionalInformation(saturn),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(saturnImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(saturnImage))
                 },
                 new Planet()
                 { Name = uranus,
@@ -96,7 +95,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(uranus),
                     Mass = GetMass(uranus),
                     AdditionalInformation = GetAdditionalInformation(uranus),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(uranusImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(uranusImage))
                 },
                 new Planet()
                 {
@@ -105,7 +104,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(neptune),
                     Mass = GetMass(neptune),
                     AdditionalInformation = GetAdditionalInformation(neptune),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(neptuneImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(neptuneImage))
                 },
                 new Planet()
                 {
@@ -114,7 +113,7 @@ namespace PlanetAPI.Models
                     DistanceFromSun = GetDistanceFromSun(pluto),
                     Mass = GetMass(pluto),
                     AdditionalInformation = GetAdditionalInformation(pluto),
-                    Image = Convert.ToBase64String(PlanetImage.ImageToByteArray(plutoImage))
+                    Image = Convert.ToBase64String(ImageToByteArray(plutoImage))
                 }
             };
         }
@@ -360,13 +359,13 @@ namespace PlanetAPI.Models
         #endregion
 
 
-        //private byte[] ImageToByteArray(Image imageIn)
-        //{
-        //    using (MemoryStream ms = new MemoryStream())
-        //    {
-        //        imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-        //        return ms.ToArray();
-        //    }
-        //}
+        private byte[] ImageToByteArray(Image imageIn)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                return ms.ToArray();
+            }
+        }
     }
 }
