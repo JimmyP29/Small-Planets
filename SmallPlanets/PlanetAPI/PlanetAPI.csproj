@@ -215,6 +215,7 @@
     <Compile Include="Helpers\PlanetBuilder.cs" />
     <Compile Include="Helpers\PlanetImage.cs" />
     <Compile Include="Helpers\PlanetInformation.cs" />
+    <Compile Include="Interfaces\IPlanetBuilder.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -223,6 +224,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Services\PlanetBuilderService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
