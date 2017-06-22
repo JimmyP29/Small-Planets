@@ -208,9 +208,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SolarSystemController.cs" />
+    <Compile Include="Enums\PlanetEnum.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\PlanetBuilder.cs" />
     <Compile Include="Helpers\PlanetImage.cs" />
     <Compile Include="Helpers\PlanetInformation.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />

@@ -10,7 +10,7 @@ namespace PlanetAPI.Controllers
         // GET api/<controller>
         public HttpResponseMessage Get()
         {
-             SolarSystem response = new SolarSystem();
+            SolarSystem response = new SolarSystem();
             return Request.CreateResponse(HttpStatusCode.OK, response, Configuration.Formatters.JsonFormatter);
         }
     }

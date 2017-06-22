@@ -1,12 +1,14 @@
-﻿namespace PlanetAPI.Helpers
+﻿using System;
+
+namespace PlanetAPI.Helpers
 {
     public class PlanetInformation
     {
-        public static string GetPlanetDiameter(string planet)
+        public static string GetPlanetDiameter(Enum planet)
         {
             string result = string.Empty;
 
-            switch (planet.ToLower())
+            switch (planet.ToString().ToLower())
             {
                 case "mercury":
                     result = "4,879 km";
@@ -48,11 +50,11 @@
             return result;
         }
 
-        public static string GetDistanceFromSun(string planet)
+        public static string GetDistanceFromSun(Enum planet)
         {
             string result = string.Empty;
 
-            switch (planet.ToLower())
+            switch (planet.ToString().ToLower())
             {
                 case "mercury":
                     result = "57.91 million km";
@@ -94,11 +96,11 @@
             return result;
         }
 
-        public static string GetMass(string planet)
+        public static string GetMass(Enum planet)
         {
             string result = string.Empty;
 
-            switch (planet.ToLower())
+            switch (planet.ToString().ToLower())
             {
                 case "mercury":
                     result = "3.285 × 10^23 kg";
@@ -140,11 +142,11 @@
             return result;
         }
 
-        public static string GetAdditionalInformation(string planet)
+        public static string GetAdditionalInformation(Enum planet)
         {
             string result = string.Empty;
 
-            switch (planet.ToLower())
+            switch (planet.ToString().ToLower())
             {
                 case "mercury":
                     result = "Mercury is the smallest and innermost planet in the Solar System. Its orbital period is less than any other planet in the Solar System. Seen from Earth, it appears to move around its orbit in about 116 days. It has no known natural satellites.";
