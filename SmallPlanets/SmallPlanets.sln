@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetAPI", "PlanetAPI\Plan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallPlanetsTest", "SmallPlanetsTest\SmallPlanetsTest.csproj", "{0B636971-092B-4208-8A08-FBA2FCE7F125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetAPITest", "PlanetAPITest\PlanetAPITest.csproj", "{7405B168-4445-40DB-A2F5-D6AEA4859D45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0B636971-092B-4208-8A08-FBA2FCE7F125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B636971-092B-4208-8A08-FBA2FCE7F125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B636971-092B-4208-8A08-FBA2FCE7F125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
