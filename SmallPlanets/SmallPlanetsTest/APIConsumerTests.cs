@@ -8,7 +8,7 @@ namespace SmallPlanetsTest
     public class APIConsumerTests
     {
         [TestMethod]
-        public void Returns_SolarSystem_From_SmallPlanetsAPI()
+        public void Returns_SolarSystem_From_PlanetAPI()
         {
             APIConsumerService service = new APIConsumerService();
             SolarSystem solarSystem = service.GetSolarSystem();
