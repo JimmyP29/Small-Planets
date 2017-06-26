@@ -31,7 +31,7 @@ namespace SmallPlanets.Services
                     solarSystem = await response.Content.ReadAsAsync<SolarSystem>();
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
                 throw;

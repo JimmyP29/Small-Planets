@@ -14,7 +14,7 @@ namespace SmallPlanets.Controllers
         public SolarSystemController(IAPIConsumer apiConsumer, ISolarSystem solarSystem)
         {
             //IAPIConsumer apiConsumer = new APIConsumerService();
-            //_solarSystem = new SolarSystemService(apiConsumer);
+            // _solarSystem = new SolarSystemService(apiConsumer);
             _apiConsumer = apiConsumer;
             _solarSystem = solarSystem;
 
@@ -35,9 +35,10 @@ namespace SmallPlanets.Controllers
             return Json(planet);
         }
 
-        private SolarSystem LoadSolarSystemData()
+        public SolarSystem LoadSolarSystemData()
         {
             SolarSystem solarSystem;
+
             if (Session["SolarSystem"] == null)
             {
                 solarSystem = new SolarSystem(_solarSystem);

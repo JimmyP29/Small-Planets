@@ -28,7 +28,7 @@ namespace PlanetAPI.Services
 
         public string GetDiameter(Enum type)
         {
-            return PlanetInformation.GetPlanetDiameter(type);
+            return PlanetInformation.GetDiameter(type);
         }
 
         public string GetDistanceFromSun(Enum type)

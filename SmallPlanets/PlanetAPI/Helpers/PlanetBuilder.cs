@@ -15,6 +15,7 @@ namespace PlanetAPI.Helpers
 
         public Planet Create(Enum type)
         {
+            var test = _planetBuilder.Create(type);
             return _planetBuilder.Create(type);
         }
     }

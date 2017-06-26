@@ -10,10 +10,13 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\roslyn\vbc.exe
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\roslyn\VBCSCompiler.exe
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\SmallPlanetsTest.dll.config
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\SmallPlanetsTest.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\SmallPlanetsTest.pdb
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Castle.Core.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Moq.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\SmallPlanets.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Web.Helpers.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Web.Mvc.dll
@@ -36,6 +39,7 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Newtonsoft.Json.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\SmallPlanets.pdb
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Moq.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Web.Helpers.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Web.Mvc.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Web.Razor.xml
@@ -59,7 +63,3 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.csprojResolveAssemblyReference.cache
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.pdb
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\SmallPlanetsTest.dll.config
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Castle.Core.dll
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Moq.dll
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Moq.xml

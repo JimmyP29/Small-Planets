@@ -4,7 +4,7 @@ namespace PlanetAPI.Helpers
 {
     public class PlanetInformation
     {
-        public static string GetPlanetDiameter(Enum planet)
+        public static string GetDiameter(Enum planet)
         {
             string result = string.Empty;
 
