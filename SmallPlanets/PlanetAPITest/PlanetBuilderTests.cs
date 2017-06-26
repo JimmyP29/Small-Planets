@@ -13,13 +13,10 @@ namespace PlanetAPITest
         [TestMethod]
         public void Earth_Create_Builds_Planet()
         {
-           // Mock<IPlanetBuilder> mockPlanetBuilder = new Mock<IPlanetBuilder>();
+            Enum type = PlanetEnum.Earth;
             PlanetBuilderService service = new PlanetBuilderService();
             PlanetBuilder planetBuilder = new PlanetBuilder(service);
-            Enum type = PlanetEnum.Earth;
-            Planet result = planetBuilder.Create(type);
-            //mockPlanetBuilder.Verify(mock => mock.Create(type), Times.Once);
-            //planetBuilder.Create(type);
+            Planet result = service.Create(type);
 
             Assert.IsNotNull(result);
         }

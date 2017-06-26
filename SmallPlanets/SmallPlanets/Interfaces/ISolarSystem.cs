@@ -7,7 +7,7 @@ namespace SmallPlanets.Interfaces
 {
     public interface ISolarSystem
     {
-        List<Planet> LoadSolarSystem();
+        List<Planet> LoadSolarSystem(IAPIConsumer apiConsumer);
         Planet GetPlanetByName(SolarSystem solarSystem, string name);
     }
 }

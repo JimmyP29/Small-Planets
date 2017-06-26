@@ -15,10 +15,10 @@ namespace SmallPlanetsTest
             //var mockSolarSystem = new Mock<ISolarSystem>(MockBehavior.Strict);
             var mockSolarSystem = new Mock<ISolarSystem>();
             IAPIConsumer apiConsumer = new APIConsumerService();
-            ISolarSystem service = new SolarSystemService(apiConsumer);
+            ISolarSystem service = new SolarSystemService();
             SolarSystem solarSystem = new SolarSystem(service);
             //SolarSystem solarSystem = new SolarSystem(mockSolarSystem.Object);
-            solarSystem.CreateSolarSystem();
+            solarSystem.CreateSolarSystem(apiConsumer);
 
             Assert.AreEqual(9, solarSystem.Planets.Count);
         }

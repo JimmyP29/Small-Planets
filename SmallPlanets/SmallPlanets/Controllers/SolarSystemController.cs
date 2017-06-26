@@ -42,7 +42,7 @@ namespace SmallPlanets.Controllers
             if (Session["SolarSystem"] == null)
             {
                 solarSystem = new SolarSystem(_solarSystem);
-                solarSystem.CreateSolarSystem();
+                solarSystem.CreateSolarSystem(_apiConsumer);
             }
             else
             {

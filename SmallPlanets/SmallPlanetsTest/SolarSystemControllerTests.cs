@@ -64,7 +64,7 @@ namespace SmallPlanetsTest
             controller.Index();
 
             SolarSystem correct = new SolarSystem(mockSolarSystem.Object);
-            correct.CreateSolarSystem();
+            correct.CreateSolarSystem(mockApiConsumer.Object);
 
             SolarSystem actual = (SolarSystem)controller.Session["SolarSystem"];
             Assert.AreEqual(correct.Planets.Count, actual.Planets.Count);

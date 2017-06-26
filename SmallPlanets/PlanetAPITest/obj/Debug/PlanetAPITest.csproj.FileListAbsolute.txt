@@ -31,7 +31,6 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Deb
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\Microsoft.Owin.Security.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\Microsoft.Owin.Security.OAuth.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\Owin.dll
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\System.Web.Http.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\System.Web.Http.Owin.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPITest\bin\Debug\System.Net.Http.Formatting.dll

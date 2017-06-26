@@ -19,25 +19,12 @@ namespace PlanetAPITest
             Bitmap result = service.GetImage(PlanetEnum.Earth);
 
             Assert.IsNotNull(result);
-            //Enum type = PlanetEnum.Earth;
-            //Assembly assembly = Assembly.GetExecutingAssembly();
-            //string path = $"PlanetAPI.Images.{type.ToString().ToLower()}.jpeg";
-            //Stream stream = assembly.GetManifestResourceStream(path);
-            //Bitmap correctData = new Bitmap(stream);
-
-            //PlanetBuilderService service = new PlanetBuilderService();
-
-            //Bitmap actualData = service.GetImage(PlanetEnum.Earth);
-
-
-            //Assert.AreEqual(correctData, actualData);
         }
 
         [TestMethod]
         public void Earth_GetDiameter_Returns_Correct_Data()
         {
             PlanetBuilderService service = new PlanetBuilderService();
-            //string correctData = "12,742 km";
             string correctData = GetTestDataForEarth().Diameter;
             string actualData = service.GetDiameter(PlanetEnum.Earth);
 
@@ -102,7 +89,6 @@ namespace PlanetAPITest
                 DistanceFromSun = "149.6 million km",
                 Mass = "5.972 × 10^24 kg",
                 AdditionalInformation = "Earth is the third planet from the Sun, the densest planet in the Solar System, the largest of the Solar System's four terrestrial planets, and the only astronomical object known to harbor life."
-
             };
         }
         #endregion

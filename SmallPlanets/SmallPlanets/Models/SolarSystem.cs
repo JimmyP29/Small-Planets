@@ -17,9 +17,9 @@ namespace SmallPlanets.Models
             Planets = new List<Planet>();
         }
 
-        public void CreateSolarSystem()
+        public void CreateSolarSystem(IAPIConsumer apiConsumer)
         {
-            Planets = _solarSystemService.LoadSolarSystem();
+            Planets = _solarSystemService.LoadSolarSystem(apiConsumer);
         }
 
         public Planet GetPlanetFromSolarSystem(string planetName)
