@@ -113,3 +113,4 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\bin\Micr
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.pdb
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.csprojResolveAssemblyReference.cache

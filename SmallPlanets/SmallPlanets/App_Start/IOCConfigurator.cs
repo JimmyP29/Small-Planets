@@ -1,4 +1,6 @@
 ﻿using Microsoft.Practices.Unity;
+using SmallPlanets.DAL;
+using SmallPlanets.DAL.Interfaces;
 using SmallPlanets.Infrastructure;
 using SmallPlanets.Interfaces;
 using SmallPlanets.Services;
@@ -12,6 +14,7 @@ namespace SmallPlanets.App_Start
         {
             IUnityContainer container = new UnityContainer();
             RegisterServices(container);
+            RegisterRepositories(container);
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }
 
@@ -19,6 +22,11 @@ namespace SmallPlanets.App_Start
         {
             container.RegisterType<IAPIConsumer, APIConsumerService>();
             container.RegisterType<ISolarSystem, SolarSystemService>();
+        }
+
+        private static void RegisterRepositories(IUnityContainer container)
+        {
+            container.RegisterType<ILogRepository, LogRepository>();
         }
     }
 }

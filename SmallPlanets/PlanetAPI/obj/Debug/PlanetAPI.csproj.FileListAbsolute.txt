@@ -110,3 +110,4 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPI\bin\Microso
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPI\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPI\bin\System.Web.Http.Owin.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPI\obj\Debug\PlanetAPI.pdb
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\PlanetAPI\obj\Debug\PlanetAPI.csprojResolveAssemblyReference.cache

@@ -13,6 +13,10 @@
             console.log('Planet is undefined');
         }
     });
+
+    $('#captains_log').click(function () {
+        displayCaptainsLog();
+    });
 });
 
 function displayInformation(planet) {
@@ -35,5 +39,9 @@ function loadMissionStatement() {
         strings: ['Mission 1.293a "Small Planets"   ', 'Click Planets to commence Mission...   '],
         typeSpeed: 0
     });
+}
+
+function displayCaptainsLog() {
+    dataService.loadLog();
 }
 
