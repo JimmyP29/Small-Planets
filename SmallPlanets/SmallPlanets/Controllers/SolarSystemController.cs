@@ -9,7 +9,6 @@ namespace SmallPlanets.Controllers
     {
         private readonly IAPIConsumer _apiConsumer;
         private readonly ISolarSystem _solarSystem;
-        
 
         public SolarSystemController(IAPIConsumer apiConsumer, ISolarSystem solarSystem)
         {
