@@ -31,7 +31,7 @@
     padding-left: 20px;
 }
 
-#mission-statement{
+#label_mission_statement{
     z-index: 3;
     position: relative;
     color: dodgerblue;
@@ -63,4 +63,25 @@
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/*Captains Log*/
+
+.image-log-planet {
+    height: 30px; 
+    width: 30px;
+}
+
+/* Captains Log Scrollbar */
+
+#log-modal-body {
+    overflow-y: scroll;
+}
+
+#log-modal-body::-webkit-scrollbar {
+    width: 12px;
+}
+
+#log-modal-body::-webkit-scrollbar-thumb {
+    background-color: dodgerblue; 
 }

@@ -17,10 +17,10 @@
 </head>
 <body>
     <div id="mission-panel">
-        <label id="mission-statement"></label>
+        <label id="label_mission_statement"></label>
     </div>
     <div style="float: right;">
-        <button id="captains_log">LOG</button>
+        <button id="button_captains_log">LOG</button>
     </div>
     <div class="background">
         <div class="solar-system">
@@ -94,14 +94,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h1 class="modal-title"></h1>
+                    <h1 class="modal-title">Captains Log</h1>
                 </div>
-                <div class="modal-body">
-                    <table id="log_table">
+                <div id="log-modal-body" class="modal-body" style="overflow-y: scroll;">
+                    <table id="log_table" class="text-center">
                         <tr>
-                            <th></th>
-                            <th>Planet</th>
-                            <th>Visited</th>
+                            <th class="text-center"></th>
+                            <th class="text-center">Planet</th>
+                            <th >Visited</th>
                         </tr>
                     </table>
                     @*<div class="row">
@@ -128,16 +128,10 @@
                     </div>*@
                     <br />
                     <hr />
-                    <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1 ">
-                            <label>Additional Information: </label>
-                            <p id="p-additional"></p>
-                        </div>
-
-                    </div>
+                 
                 </div>
                 <div class="modal-footer">
-                    <button id="close_button" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="button_close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
 

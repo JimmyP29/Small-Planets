@@ -8,8 +8,6 @@
     $('.planet').click(function (e) {
         var planet = dataService.loadPlanet($(e.toElement).attr('data-planet-name'), function (planet) {
             if (planet !== undefined) {
-                console.log("oh yeah here's your planet...");
-                console.log(planet);
                 currentPlanet = planet;
                 displayInformation(planet);
             } else {
@@ -18,41 +16,26 @@
         });
     });
 
-    $('#close_button').click(function () {
+    $('#button_close').click(function () {
         var planet = currentPlanet;
         saveVisit(planet);
         currentPlanet = null;
     });
 
-    $('#captains_log').click(function () {
+    $('#button_captains_log').click(function () {
         displayCaptainsLog();
     });
 });
 
 function displayInformation(planet) {
-    document.getElementById('planet-image').src = decodeImage(planet.Image);
-    $('.modal-title').text(planet.Name);
-    $('h2').css('font-family', '\'Space Mono\', monospace');
-    $('#span-distance').text(planet.DistanceFromSun);
-    $('#span-mass').text(planet.Mass);
-    $('#span-diameter').text(planet.Diameter);
-    $('#p-additional').typed({
-        strings: [planet.AdditionalInformation],
-        typeSpeed: 0
-    });
-
-    $('#planet-modal').modal();
+    modalBuilder.createPlanetModal(planet);
 }
 
 function loadMissionStatement() {
-    $('#mission-statement').typed({
+    $('#label_mission_statement').typed({
         strings: ['Mission 1.293a "Small Planets"   ', 'Click Planets to commence Mission...   '],
         typeSpeed: 0
     });
-}
-
-function decodeImage(image) {
-    return 'data:image/jpeg;base64,' + image;
 }
 
 function displayCaptainsLog() {
@@ -60,6 +43,7 @@ function displayCaptainsLog() {
         if (log !== undefined) {
             console.log('yep');
             console.log(log);
+            modalBuilder.createLogModal(log);
         }
 
     });

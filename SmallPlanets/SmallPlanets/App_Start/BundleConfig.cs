@@ -24,7 +24,8 @@ namespace SmallPlanets
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
                       "~/Scripts/custom/small-planets-main.js",
-                      "~/Scripts/custom/planet.js",
+                      "~/Scripts/custom/modal-builder.js",
+                      "~/Scripts/custom/image-helper.js",
                       "~/Scripts/custom/data-service.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/typed").Include(
