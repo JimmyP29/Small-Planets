@@ -1,6 +1,7 @@
 ﻿using SmallPlanets.DAL;
 using SmallPlanets.DAL.Interfaces;
 using SmallPlanets.Models.Entities;
+using System;
 using System.Web.Mvc;
 
 namespace SmallPlanets.Controllers
@@ -31,15 +32,16 @@ namespace SmallPlanets.Controllers
         }
 
         [HttpPost]
-        public ActionResult SaveVisit(Log log)
+        public void SaveVisit(Log log)
         {
             if (log != null)
             {
+                log.Visited = DateTime.Now;
                 _unitOfWork.LogRepository.Insert(log);
                 _unitOfWork.Save();
             }
 
-            return RedirectToAction("Index", "SolarSystem");
+           // return RedirectToAction("Index", "SolarSystem");
         }
     }
 }

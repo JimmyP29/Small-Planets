@@ -85,7 +85,67 @@
 
         </div>
     </div>
-    <input type="hidden" id="hidden-planet" />
+
+
+    <div id="log-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h1 class="modal-title"></h1>
+                </div>
+                <div class="modal-body">
+                    <table id="log_table">
+                        <tr>
+                            <th></th>
+                            <th>Planet</th>
+                            <th>Visited</th>
+                        </tr>
+                    </table>
+                    @*<div class="row">
+                        <div class="col-lg-4">
+                            <img id="planet-image" />
+                        </div>
+                        <div class="col-lg-8">
+                            <br />
+                            <div class="row">
+                                <label>Distance from Sun: </label>
+                                <span id="span-distance"></span>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <label>Mass: </label>
+                                <span id="span-mass"></span>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <label>Diameter: </label>
+                                <span id="span-diameter"></span>
+                            </div>
+                        </div>
+                    </div>*@
+                    <br />
+                    <hr />
+                    <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1 ">
+                            <label>Additional Information: </label>
+                            <p id="p-additional"></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="close_button" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>

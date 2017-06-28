@@ -111,6 +111,6 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\bin\Enti
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.csprojResolveAssemblyReference.cache
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.pdb
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanets\obj\Debug\SmallPlanets.csprojResolveAssemblyReference.cache
