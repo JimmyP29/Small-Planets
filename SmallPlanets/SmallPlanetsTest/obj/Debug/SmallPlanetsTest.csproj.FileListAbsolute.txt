@@ -1,5 +1,3 @@
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\EntityFramework.dll
-C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.csprojResolveAssemblyReference.cache
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\roslyn\csc.exe
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\roslyn\csc.exe.config
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\roslyn\csc.rsp
@@ -70,6 +68,7 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Owin.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\EntityFramework.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Net.Http.Formatting.dll
@@ -97,5 +96,6 @@ C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.csprojResolveAssemblyReference.cache
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.dll
 C:\Users\James\Documents\GitHub\Small-Planets\SmallPlanets\SmallPlanetsTest\obj\Debug\SmallPlanetsTest.pdb

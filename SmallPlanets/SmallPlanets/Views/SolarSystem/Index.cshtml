@@ -16,14 +16,20 @@
     <title>Small Planets</title>
 </head>
 <body>
-    <div id="mission-panel">
-        <label id="label_mission_statement"></label>
-    </div>
-    <div style="float: right;">
-        <button id="button_captains_log">LOG</button>
+    <div class="row">
+        <div class="col-lg-4">
+            <div id="mission_panel">
+                <label id="label_mission_statement"></label>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div id="captains_log_button_wrapper" style="float: right;">
+                <button id="button_captains_log" type="button" class="btn btn-default btn-lg">Captains Log</button>
+            </div>
+        </div>
     </div>
     <div class="background">
-        <div class="solar-system">
+        <div class="solarsystem">
             <div id="mercury" class="planet mercury" data-planet-name="Mercury" data-toggle="tooltip" data-placement="top" title="Mercury"></div>
             <div id="venus" class="planet venus" data-planet-name="Venus" data-toggle="tooltip" data-placement="top" title="Venus"></div>
             <div id="earth" class="planet earth" data-planet-name="Earth" data-toggle="tooltip" data-placement="top" title="Earth"></div>
@@ -36,35 +42,33 @@
         </div>
     </div>
 
-    <div id="planet-modal" class="modal fade" role="dialog">
+    <div id="planet_modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-
-
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h1 class="modal-title"></h1>
+                    <h1 id="planet_header_title" class="modal-title"></h1>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-lg-4">
-                            <img id="planet-image" />
+                            <img id="planet_image" />
                         </div>
                         <div class="col-lg-8">
                             <br />
                             <div class="row">
                                 <label>Distance from Sun: </label>
-                                <span id="span-distance"></span>
+                                <span id="span_distance"></span>
                             </div>
                             <br />
                             <div class="row">
                                 <label>Mass: </label>
-                                <span id="span-mass"></span>
+                                <span id="span_mass"></span>
                             </div>
                             <br />
                             <div class="row">
                                 <label>Diameter: </label>
-                                <span id="span-diameter"></span>
+                                <span id="span_diameter"></span>
                             </div>
                         </div>
                     </div>
@@ -73,73 +77,45 @@
                     <div class="row">
                         <div class="col-lg-10 col-lg-offset-1 ">
                             <label>Additional Information: </label>
-                            <p id="p-additional"></p>
+                            <p id="p_additional"></p>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button id="close_button" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="button_close_planet" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-    <div id="log-modal" class="modal fade" role="dialog">
+    <div id="log_modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
-
-
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h1 class="modal-title">Captains Log</h1>
                 </div>
-                <div id="log-modal-body" class="modal-body" style="overflow-y: scroll;">
+                <div id="log_modal_body" class="modal-body">
+                    <span id="span_empty_log_message">Log is Empty...</span>
+                    <div id="log_titles" class="row">
+                        <span class="col-lg-offset-2">Planet</span>
+                        <span class="col-lg-offset-1">Visited</span>
+                    </div>
                     <table id="log_table" class="text-center">
-                        <tr>
-                            <th class="text-center"></th>
-                            <th class="text-center">Planet</th>
-                            <th >Visited</th>
-                        </tr>
+                        <tr></tr>
                     </table>
-                    @*<div class="row">
-                        <div class="col-lg-4">
-                            <img id="planet-image" />
-                        </div>
-                        <div class="col-lg-8">
-                            <br />
-                            <div class="row">
-                                <label>Distance from Sun: </label>
-                                <span id="span-distance"></span>
-                            </div>
-                            <br />
-                            <div class="row">
-                                <label>Mass: </label>
-                                <span id="span-mass"></span>
-                            </div>
-                            <br />
-                            <div class="row">
-                                <label>Diameter: </label>
-                                <span id="span-diameter"></span>
-                            </div>
-                        </div>
-                    </div>*@
-                    <br />
-                    <hr />
-                 
                 </div>
                 <div class="modal-footer">
-                    <button id="button_close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div id="button_clear_wrapper">
+                        <button id="button_clear" type="button" class="clear btn btn-default" data-dismiss="modal">Clear Log</button>
+                    </div>
+                    <div id="warning_label_wrapper">
+                        <label id="warning_label"></label>
+                    </div>
+                    <button id="button_log_close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-
 </body>
 
 </html>

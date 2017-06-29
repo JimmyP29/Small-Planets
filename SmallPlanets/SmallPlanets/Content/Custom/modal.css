@@ -1,0 +1,93 @@
+﻿.modal-header, .modal-body, .modal-footer, .modal-content {
+    background-color: #000;
+    color: dodgerblue;
+    border: solid 1px;
+}
+
+.modal-body {
+    height: 400px;
+}
+
+.modal-content{
+    font-family: 'Space Mono', monospace;
+}
+
+.modal-title {
+    padding-left: 5px;
+    font-family: 'Space Mono', monospace;
+}
+
+.btn{
+    background-color: #000;
+    color: dodgerblue;
+    border: solid 1px;
+}
+
+.btn:hover{
+    background-color: dodgerblue;
+    color: #000;
+    border: solid 1px;
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*Captains Log*/
+
+.image_log_planet {
+    height: 30px; 
+    width: 30px;
+}
+
+#button_clear_wrapper{
+    float: left;
+}
+
+.clear{
+    color: red
+}
+
+.clear:hover{
+    background-color: red;
+}
+
+#warning_label_wrapper {
+    float: left;
+    padding-left: 20px;
+    padding-top: 7px;
+    color: red;
+}
+
+/* Captains Log Scrollbar */
+
+#log_modal_body {
+    overflow-y: scroll;
+}
+
+#log_modal_body::-webkit-scrollbar {
+    width: 12px;
+}
+
+#log_modal_body::-webkit-scrollbar-thumb {
+    background-color: dodgerblue; 
+}

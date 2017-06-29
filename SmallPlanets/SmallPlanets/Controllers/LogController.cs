@@ -1,47 +1,62 @@
 ﻿using SmallPlanets.DAL;
 using SmallPlanets.DAL.Interfaces;
 using SmallPlanets.Models.Entities;
-using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace SmallPlanets.Controllers
 {
     public class LogController : Controller
     {
-        // private LogContext db = new LogContext();
-        //private ILogRepository _logRepository;
         private UnitOfWork _unitOfWork;
 
         public LogController(ILogRepository logRepository)
         {
-            //_logRepository = logRepository;
             _unitOfWork = new UnitOfWork();
-        }
-        // GET: Logs
-        public JsonResult Index()
-        {
-            //return Json(_logRepository.GetLogs(), JsonRequestBehavior.AllowGet);
-            return Json(_unitOfWork.LogRepository.Get(), JsonRequestBehavior.AllowGet);
         }
 
         [HttpGet]
         public JsonResult GetCaptainsLog()
         {
-            //return Json(_logRepository.GetLogs(), JsonRequestBehavior.AllowGet);
-            return Json(_unitOfWork.LogRepository.Get(), JsonRequestBehavior.AllowGet);
+            return Json(_unitOfWork.LogRepository.Get(
+                orderBy: q => q.OrderByDescending(l => l.Visited)), JsonRequestBehavior.AllowGet);
         }
 
         [HttpPost]
         public void SaveVisit(Log log)
         {
-            if (log != null)
+            try
             {
-                log.Visited = DateTime.Now;
-                _unitOfWork.LogRepository.Insert(log);
-                _unitOfWork.Save();
+                if (log != null)
+                {
+                    _unitOfWork.LogRepository.Insert(log);
+                    _unitOfWork.Save();
+                }
+
+            }
+            catch (DataException)
+            {
+
+                ModelState.AddModelError("", "Unable to save changes.");
             }
 
-           // return RedirectToAction("Index", "SolarSystem");
+        }
+
+        [HttpPost]
+        public JsonResult ClearLog(List<Log> logEntries)
+        {
+            if (logEntries != null && logEntries.Count > 0)
+            {
+                foreach (Log entry in logEntries)
+                {
+                    _unitOfWork.LogRepository.Delete(entry.ID);
+                    
+                }
+                _unitOfWork.Save();
+            }
+            return Json(null);
         }
     }
 }

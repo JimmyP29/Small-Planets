@@ -228,9 +228,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\modal.css" />
-    <Content Include="Content\planets.css" />
-    <Content Include="Content\solar-system.css" />
+    <Content Include="Content\Custom\modal.css" />
+    <Content Include="Content\Custom\planets.css" />
+    <Content Include="Content\Custom\solar-system.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -239,6 +239,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom\data-service.js" />
+    <Content Include="Scripts\custom\datetime-helper.js" />
     <Content Include="Scripts\custom\image-helper.js" />
     <Content Include="Scripts\custom\modal-builder.js" />
     <Content Include="Scripts\custom\small-planets-main.js" />

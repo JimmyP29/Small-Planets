@@ -26,6 +26,7 @@ namespace SmallPlanets
                       "~/Scripts/custom/small-planets-main.js",
                       "~/Scripts/custom/modal-builder.js",
                       "~/Scripts/custom/image-helper.js",
+                      "~/Scripts/custom/datetime-helper.js",
                       "~/Scripts/custom/data-service.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/typed").Include(
@@ -36,9 +37,9 @@ namespace SmallPlanets
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Content/Custom").Include(
-                      "~/Content/modal.css",
-                      "~/Content/planets.css",
-                      "~/Content/solar-system.css"));
+                      "~/Content/Custom/modal.css",
+                      "~/Content/Custom/planets.css",
+                      "~/Content/Custom/solar-system.css"));
         }
     }
 }

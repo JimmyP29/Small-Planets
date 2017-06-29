@@ -17,19 +17,14 @@ namespace SmallPlanets.DAL
             _disposed = false;
         }
 
-        public void DeleteLog(int logId)
+        public IEnumerable<Log> GetLogs()
         {
-            throw new NotImplementedException();
+            return _context.LogEntries.ToList();
         }
 
         public Log GetLogByID(int logId)
         {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Log> GetLogs()
-        {
-            return _context.LogEntries.ToList();
+            return _context.LogEntries.Find(logId);
         }
 
         public void InsertLog(Log log)
@@ -37,14 +32,20 @@ namespace SmallPlanets.DAL
             _context.LogEntries.Add(log);
         }
 
-        public void Save()
+        public void DeleteLog(int logId)
         {
-            _context.SaveChanges();
+            Log log = _context.LogEntries.Find(logId);
+            _context.LogEntries.Remove(log);
         }
 
         public void UpdateLog(Log log)
         {
-            throw new NotImplementedException();
+            _context.Entry(log).State = System.Data.Entity.EntityState.Modified; 
+        }
+
+        public void Save()
+        {
+            _context.SaveChanges();
         }
 
         public virtual void Dispose(bool disposing)

@@ -1,0 +1,75 @@
+﻿.background {
+    position: relative;
+}
+
+.solarsystem {
+    background: url('../Images/solar-system.jpg') no-repeat;
+    width: 1350px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 200px 0 0 -675px;
+}
+
+@media screen and (min-width: 1350px) and (max-width: 2920px) and (max-height: 1048px) {
+    .solarsystem {
+        background: url('/../Images/solar-system.jpg') no-repeat;
+        width: 1250px;
+        height: 580px;
+        position: absolute;
+        margin: 220px 0 0 -620px;
+    }
+}
+
+#mission_panel{
+    z-index: 2;
+    height: 70px;
+    width: 400px;
+    border: 1px solid dodgerblue;
+    background-color: #000;
+    padding-left: 20px;
+}
+
+#label_mission_statement{
+    z-index: 3;
+    position: relative;
+    color: dodgerblue;
+    top: 13px;
+    padding-left: 20px;
+    font-family: 'Space Mono', monospace;
+}
+
+#captains_log_button_wrapper{
+    float: right;
+    padding-right: 20px;
+    position: relative;
+    font-family: 'Space Mono', monospace;
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    color: dodgerblue;
+    position: relative;
+    top: 10px;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
