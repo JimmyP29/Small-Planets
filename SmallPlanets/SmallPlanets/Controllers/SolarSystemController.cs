@@ -12,8 +12,6 @@ namespace SmallPlanets.Controllers
 
         public SolarSystemController(IAPIConsumer apiConsumer, ISolarSystem solarSystem)
         {
-            //IAPIConsumer apiConsumer = new APIConsumerService();
-            // _solarSystem = new SolarSystemService(apiConsumer);
             _apiConsumer = apiConsumer;
             _solarSystem = solarSystem;
 

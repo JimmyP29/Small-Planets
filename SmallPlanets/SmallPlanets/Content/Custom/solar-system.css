@@ -3,7 +3,7 @@
 }
 
 .solarsystem {
-    background: url('../Images/solar-system.jpg') no-repeat;
+    background: url('/../Images/solar-system.jpg') no-repeat;
     width: 1350px;
     height: 600px;
     position: absolute;
