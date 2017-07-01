@@ -1,5 +1,4 @@
 ﻿using SmallPlanets.DAL;
-using SmallPlanets.DAL.Interfaces;
 using SmallPlanets.Models.Entities;
 using System.Collections.Generic;
 using System.Data;
@@ -12,7 +11,7 @@ namespace SmallPlanets.Controllers
     {
         private UnitOfWork _unitOfWork;
 
-        public LogController(ILogRepository logRepository)
+        public LogController()
         {
             _unitOfWork = new UnitOfWork();
         }

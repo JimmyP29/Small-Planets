@@ -7,6 +7,8 @@ namespace SmallPlanets.DAL
     {
         public LogContext() : base("LogContext")
         {
+            var ensureDLLIsCopied =
+               System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
 
         public DbSet<Log> LogEntries { get; set; }
