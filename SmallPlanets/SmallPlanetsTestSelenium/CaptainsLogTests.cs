@@ -9,7 +9,7 @@ namespace SmallPlanetsTestSelenium
     public class CaptainsLogTests
     {
         [TestMethod]
-        public void Captains_Log_Is_Displayed()
+        public void Selenium_Captains_Log_Is_Displayed()
         {
             IWebDriver driver = CreateDriver();
             driver = NavigateToSolarSystem(driver);
@@ -19,7 +19,7 @@ namespace SmallPlanetsTestSelenium
         }
 
         [TestMethod]
-        public void Captains_Log_Is_Closed()
+        public void Selenium_Captains_Log_Is_Closed()
         {
             IWebDriver driver = CreateDriver();
             driver = NavigateToSolarSystem(driver);
@@ -31,7 +31,7 @@ namespace SmallPlanetsTestSelenium
         }
 
         [TestMethod]
-        public void Populate_Log_With_Planets()
+        public void Selenium_Populate_Log_With_Planets()
         {
             IWebDriver driver = CreateDriver();
             driver = NavigateToSolarSystem(driver);
@@ -57,7 +57,7 @@ namespace SmallPlanetsTestSelenium
         }
 
         [TestMethod]
-        public void Clear_Log()
+        public void Selenium_Clear_Log()
         {
             IWebDriver driver = CreateDriver();
             driver = NavigateToSolarSystem(driver);
