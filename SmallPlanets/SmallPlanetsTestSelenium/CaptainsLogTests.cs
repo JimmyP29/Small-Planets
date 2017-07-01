@@ -31,24 +31,6 @@ namespace SmallPlanetsTestSelenium
         }
 
         [TestMethod]
-        public void Clear_Log()
-        {
-            IWebDriver driver = CreateDriver();
-            Populate_Log_With_Planets();
-            driver = NavigateToSolarSystem(driver);
-            driver = NavigateToCaptainsLog(driver);
-            Thread.Sleep(3000);
-            IfEnabledClickClearLogButtonInJavascript(driver);
-            Thread.Sleep(3000);
-            driver = NavigateToCaptainsLog(driver);
-            Thread.Sleep(3000);
-            int rowCount = GetAmountOfRowsInLog(driver);
-
-            Assert.AreEqual(0, rowCount);
-
-        }
-
-        [TestMethod]
         public void Populate_Log_With_Planets()
         {
             IWebDriver driver = CreateDriver();
@@ -72,6 +54,22 @@ namespace SmallPlanetsTestSelenium
 
             int rowCount = GetAmountOfRowsInLog(driver);
             Assert.AreEqual(9, rowCount);
+        }
+
+        [TestMethod]
+        public void Clear_Log()
+        {
+            IWebDriver driver = CreateDriver();
+            driver = NavigateToSolarSystem(driver);
+            driver = NavigateToCaptainsLog(driver);
+            Thread.Sleep(3000);
+            IfEnabledClickClearLogButtonInJavascript(driver);
+            Thread.Sleep(3000);
+            driver = NavigateToCaptainsLog(driver);
+            Thread.Sleep(3000);
+            int rowCount = GetAmountOfRowsInLog(driver);
+
+            Assert.AreEqual(0, rowCount);
         }
 
         private void IfEnabledClickClearLogButtonInJavascript(IWebDriver driver)
