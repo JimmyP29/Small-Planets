@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallPlanetsTest", "SmallPl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetAPITest", "PlanetAPITest\PlanetAPITest.csproj", "{7405B168-4445-40DB-A2F5-D6AEA4859D45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallPlanetsTestSelenium", "SmallPlanetsTestSelenium\SmallPlanetsTestSelenium.csproj", "{0015A9A9-27C5-4E37-95F1-73782CEA89D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7405B168-4445-40DB-A2F5-D6AEA4859D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0015A9A9-27C5-4E37-95F1-73782CEA89D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0015A9A9-27C5-4E37-95F1-73782CEA89D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0015A9A9-27C5-4E37-95F1-73782CEA89D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0015A9A9-27C5-4E37-95F1-73782CEA89D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
