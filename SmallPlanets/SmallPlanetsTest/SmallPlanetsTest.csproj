@@ -92,10 +92,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="APIConsumerTests.cs" />
     <Compile Include="SolarSystemControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SolarSystemTests.cs" />
     <Compile Include="LogControllerTests.cs" />
   </ItemGroup>
   <ItemGroup>
